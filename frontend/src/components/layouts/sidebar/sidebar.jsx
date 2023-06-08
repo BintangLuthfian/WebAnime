@@ -7,9 +7,11 @@ const Sidebar = () => {
   const [selectedMenu, setSelectedMenu] = useState(null);
   const Menus = [
     { title: "Home", src: "home", path: "/" },
-    { title: "Playlist", src: "playlist", path: "/playlist",},
+    { title: "Genre", src: "tv", path: "/tv",},
+    { title: "List", src: "list", path: "/playlist",},
     { title: "Favorit", src: "favorit", path: "/favorit",},
     { title: "Leaderboard", src: "trophy", path: "/leaderboard",},
+    { title: "setting", src: "setting", path: "/setting",},
     // { title: "Settings ", src: "setting", path: "/settings" },
     // { title: "Logout", src: "logout", gap: true },
   ];
