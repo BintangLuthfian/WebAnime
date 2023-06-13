@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 import Login from "../components/logreg/login";
 
-  const Leaderboard = () => {
+  const List = () => {
     return (
-            <Login />
+         <Login />
       );
     };
-export default Leaderboard;
+export default List;

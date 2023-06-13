@@ -31,7 +31,7 @@ const Genre = () => {
           <ContentSwiper img="./assets/album cover/3.jpg" genre="Fantasy" />
         </SwiperSlide>
         <SwiperSlide>
-          <ContentSwiper img="./assets/album cover/7.jpg" genre="Romance" />
+          <ContentSwiper img="./assets/album cover/4.jpg" genre="Romance" />
         </SwiperSlide>
         <SwiperSlide>
           <ContentSwiper img="./assets/album cover/5.jpg" genre="Drama" />

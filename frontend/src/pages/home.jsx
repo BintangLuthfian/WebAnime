@@ -2,7 +2,7 @@ import React from "react";
 import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
 import Genre from "../components/genreAnime/genre";
-
+import DaftarAnime from "../components/tableanime/daftaranime";
 
 
 const Home = () => {
@@ -13,11 +13,15 @@ const Home = () => {
         <div className="home ps-[100px]">
           <div className="ms-[30px]">
             <div className="ucapan mt-[40px]">
-              <h3 className="text-[28px] font-semibold">Good Morning, Silverth</h3>
+              <h3 className="text-[28px] font-semibold">Selamat Datang, Silverth</h3>
             </div>
             <Genre />
           </div>
-          <div className="flex">
+          <h1>
+            Daftar anime
+          </h1>
+          <DaftarAnime />
+          <div>
         </div>
       </div>
     </React.Fragment>
