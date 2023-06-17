@@ -14,30 +14,30 @@ import ContentSwiper from "./contentSwiper";
 
 const Genre = () => {
   return (
-    <div className="genre mt-[50px]">
+    <div className="genre mt-[50px] ">
       <Swiper
         slidesPerView={3}
-        spaceBetween={40}
+        spaceBetween={50}
         // modules={[Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <ContentSwiper img="./assets/album cover/1.jpg" genre=" Action" />
+          <ContentSwiper img="./assets/album cover/1.jpg" genre="Action" />
         </SwiperSlide>
         <SwiperSlide>
-          <ContentSwiper img="./assets/album cover/2.jpg" genre="Award Winning" />
+          <ContentSwiper img="./assets/album cover/2.jpg" genre="Adventure" />
         </SwiperSlide>
         <SwiperSlide>
-          <ContentSwiper img="./assets/album cover/3.jpg" genre="Fantasy" />
+          <ContentSwiper img="./assets/album cover/3.jpg" genre="Drama" />
         </SwiperSlide>
         <SwiperSlide>
-          <ContentSwiper img="./assets/album cover/4.jpg" genre="Romance" />
+          <ContentSwiper img="./assets/album cover/4.jpg" genre="Fantasi" />
         </SwiperSlide>
         <SwiperSlide>
-          <ContentSwiper img="./assets/album cover/5.jpg" genre="Drama" />
+          <ContentSwiper img="./assets/album cover/5.jpg" genre="Romance" />
         </SwiperSlide>
         <SwiperSlide>
-          <ContentSwiper img="./assets/album cover/6.jpg" genre="fantasi" />
+          <ContentSwiper img="./assets/album cover/6.jpg" genre="Isekai" />
         </SwiperSlide>
       </Swiper>
     </div>

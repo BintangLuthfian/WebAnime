@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ProfileMenu from "./profileMenu";
 
 const NavigationBar = () => {
   const [bellImg, setBellImg] = useState("./assets/icon/bell2.png");
@@ -15,11 +16,12 @@ const NavigationBar = () => {
   }, []);
 
   const seacrhStyle = {
-    backgroundImage: "url('./assets/icon/search-Icon.png')",
+    backgroundImage: "url('./assets/icon/search-Icon.svg')",
     backgroundRepeat: "no-repeat",
     backgroundSize: "20px",
     backgroundPosition: "10px center",
     paddingLeft: "35px",
+    color: "black",
   };
 
   return (
@@ -32,26 +34,12 @@ const NavigationBar = () => {
           type="search"
           name="search"
           style={seacrhStyle}
-          placeholder="Search"
+          placeholder="Search top 5 global"
           className="py-[5px] w-[350px] rounded-md ms-[45px]"
         />
         <div className="flex items-center md:order-2">
-          <button
-            type="button"
-            className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
-            id="user-menu-button"
-            aria-expanded="false"
-            data-dropdown-toggle="user-dropdown"
-            data-dropdown-placement="bottom"
-          >
-            <span className="sr-only">Open user menu</span>
-            <img
-              className="w-8 h-8 rounded-full"
-              src="./assets/profileUser.png"
-              alt="user photo"
-            />
-          </button>
-          <span className="ms-2 border-e-2 pe-5">Silverth</span>
+           <ProfileMenu />
+           <span className="ms-2 border-e-2 pe-5">Silverth</span>
           <img
             src={bellImg}
             alt=""
@@ -62,33 +50,7 @@ const NavigationBar = () => {
             className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
             id="user-dropdown"
           >
-            <div className="px-4 py-3">
-              <span className="block text-sm text-gray-900 dark:text-white">
-                Silverth
-              </span>
-              <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">
-                silverth56@gmail.com
-              </span>
-            </div>
-            <ul className="py-2" aria-labelledby="user-menu-button">
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                >
-                  Settings
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                >
-                  Sign out
-                </a>
-              </li>
-            </ul>
-          </div>
+            </div> 
         </div>
       </div>
     </nav>
