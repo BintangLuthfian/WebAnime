@@ -4,7 +4,7 @@ import Favorit from "./pages/favorit";
 import Playlist from "./pages/list";
 import Login from "./pages/LogReg/Login/Login";
 import Regis from "./pages/LogReg/Register/Regis";
-
+import ProfileSetting from "./pages/settingPage/profilesetting";
 import Leaderboard from "./pages/setting";
 
 import Artist from "./pages/daftaranime";
@@ -19,7 +19,7 @@ function App() {
         <Route path="/regis" element={<Regis />} />
         <Route path="/favorit" element={<Favorit />} />
          <Route path="/playlist" element={<Playlist />} />
-
+         <Route path="/profile" element={<ProfileSetting />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/artist" element={<Artist />} />
     

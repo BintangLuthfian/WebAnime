@@ -19,7 +19,7 @@ const ContentSwiper = (props) => {
     <div
       className="content-swiper cursor-pointer"
       style={styleContent}
-      onClick={() => alert("Masih dalam tahap pengembangan")}
+      onClick={() => alert("Belum dapat ditampilkan")}
     >
       <div className="genreName" style={styleGenre}>
         <p className="text-[26px] font-semibold ">{props.genre}</p>

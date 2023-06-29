@@ -8,7 +8,7 @@ const Sidebar = () => {
   const Menus = [
     { title: "Home", src: "home", path: "/" },
     { title: "Playlist", src: "home", path: "/list" },
-    { title: "Daftar Anime ", src: "home", path: "/daftaranime" },
+    { title: "Daftar_Anime ", src: "home", path: "/daftaranime" },
     { title: "Favorit", src: "home", path: "/favorit" },
     { title: "Setting", src: "home", path: "/setting" },
 
@@ -41,7 +41,7 @@ const Sidebar = () => {
               }`}
               style={{ fontFamily: "Josefin Sans, sans-serif" }}
             >
-              Musivo
+              Silverth
             </h1>
           </div>
         </Link>

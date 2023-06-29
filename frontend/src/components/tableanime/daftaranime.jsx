@@ -10,7 +10,7 @@ const Table = ({ image, text }) => {
         width: "180px",
         height: "280px",
         padding: "2px",
-        margin: "5px",
+        margin: "10px",
         cursor: "pointer",
         border: "none",
       }}
@@ -64,8 +64,8 @@ const App = () => {
       style={{
         display: "flex",
         flexWrap: "wrap",
-        marginLeft: "100px",
-        padding: "20px",
+        marginLeft: "10px",
+        padding: "10px",
       }}
     >
       <Table
