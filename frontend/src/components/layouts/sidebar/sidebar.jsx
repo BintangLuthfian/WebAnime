@@ -7,10 +7,10 @@ const Sidebar = () => {
 
   const Menus = [
     { title: "Home", src: "home", path: "/" },
-    { title: "Playlist", src: "home", path: "/list" },
-    { title: "Daftar_Anime ", src: "home", path: "/daftaranime" },
-    { title: "Favorit", src: "home", path: "/favorit" },
-    { title: "Setting", src: "home", path: "/setting" },
+    { title: "Animelist", src: "home", path: "/list" },
+    { title: "Ongoing_List ", src: "home", path: "/daftaranime" },
+    { title: "Popular_Series", src: "home", path: "/favorit" },
+    { title: "Bookmark", src: "home", path: "/setting" },
 
   ];
 
