@@ -3,7 +3,7 @@ import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
 
 
-const Artist = () => {
+const Daftaranime = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Mengatur posisi scroll ke bagian atas saat halaman dimuat
   }, []);
@@ -18,4 +18,4 @@ const Artist = () => {
     </React.Fragment>
   );
 };
-export default Artist;
+export default Daftaranime;

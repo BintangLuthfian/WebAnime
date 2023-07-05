@@ -9,8 +9,8 @@ const Sidebar = () => {
     { title: "Home", src: "home", path: "/" },
     { title: "Animelist", src: "home", path: "/list" },
     { title: "Ongoing_List ", src: "home", path: "/daftaranime" },
-    { title: "Popular_Series", src: "home", path: "/favorit" },
-    { title: "Bookmark", src: "home", path: "/setting" },
+    { title: "Popular_Series", src: "home", path: "/ranting" },
+    { title: "Bookmark", src: "home", path: "/bookmark" },
 
   ];
 
