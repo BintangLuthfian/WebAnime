@@ -3,11 +3,11 @@ import jwt from "jsonwebtoken";
 
 export const refreshToken = async(req, res) => {
     try {
-        const refreshToken = req.cookie.refreshToken;
+        const refreshToken = req.cookies.refreshToken;
         if(!refreshToken) return res.sendStatus(401);
         const user = await Users.findAll({
             where:{
-            refreshToken: refreshToken,
+            refresh_token: refreshToken,
         }
         });
         if(!user[0]) return res.sendStatus(403);
@@ -19,7 +19,7 @@ export const refreshToken = async(req, res) => {
             const accessToken = jwt.sign({UserId, name, email}, process.env.ACCESS_TOKEN_SECRET,{
                 expiresIn: '15s'
             });
-            res.jwt({ accessToken });
+            res.json({ accessToken });
         });
     } catch (error) {
         console.log(error)
