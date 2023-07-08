@@ -34,7 +34,7 @@ const NavigationBar = () => {
           type="search"
           name="search"
           style={seacrhStyle}
-          placeholder="Search top 5 global"
+          placeholder="Cari Anime"
           className="py-[5px] w-[350px] rounded-md ms-[45px]"
         />
         <div className="flex items-center md:order-2">

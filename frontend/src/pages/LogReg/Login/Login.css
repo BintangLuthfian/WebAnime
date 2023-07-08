@@ -37,7 +37,7 @@
     position: relative;
   }
   
-  .login-box .user-box input {
+  .login-box .user-box  {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;

@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
-
+import Header from "../admin components/headerOngoing";
+import DaftarAnime from "../components/tableanime/daftaranimeOngoing";
 
 const Daftaranime = () => {
   useEffect(() => {
@@ -12,10 +13,16 @@ const Daftaranime = () => {
     <React.Fragment>
       <NavigationBar />
       <Sidebar />
-      <div>
 
+       <Header />
+
+
+<div  className="ms-[100px] " >
+      <DaftarAnime />
       </div>
+
     </React.Fragment>
   );
 };
+
 export default Daftaranime;

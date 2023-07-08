@@ -46,7 +46,7 @@ export const Login = async(req, res) => {
         const name = user[0].name;
         const email = user[0].email;
         const accessToken = jwt.sign({UserId, name, email}, process.env.ACCESS_TOKEN_SECRET,{
-            expiresIn: '20s'
+            expiresIn: '60s'
         });
         const refreshToken = jwt.sign({UserId, name, email}, process.env.REFRESH_TOKEN_SECRET,{
             expiresIn: '1d'
@@ -58,7 +58,7 @@ export const Login = async(req, res) => {
         });
         res.cookie('refreshToken', refreshToken,{
             httponly: true,
-            maxAge: 24 * 60 * 60 * 60 * 1000 // ,
+            maxAge: 24 * 60 * 60 * 1000 // ,
          //   secure: true            jika menggunakan https karena lokal jadi tidak menggunakan
         })
         res.json({ accessToken });
@@ -69,11 +69,11 @@ export const Login = async(req, res) => {
 
 
 export const Logout = async(req, res) => {
-    const refreshToken = req.cookie.refreshToken;
+    const refreshToken = req.cookies.refreshToken;
     if(!refreshToken) return res.sendStatus(204);
     const user = await Users.findAll({
         where:{
-        refreshToken: refreshToken,
+        refresh_token: refreshToken,
     }
     });
     if(!user[0]) return res.sendStatus(204);

@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/LogReg/Login/Login";
 import Regis from "./pages/LogReg/Register/Regis";
 import Home from "./pages/home";
-import List from "./pages/list";
 import Daftar from "./pages/daftaranime";
 import Ranting from "./pages/ranting"
 import Bookmark from "./pages/bookmark";
@@ -19,7 +18,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/regis" element={<Regis />} />
         <Route path="/" element={<Home />} />
-        <Route path="/list" element={<List />} />
         <Route path="/daftaranime" element={<Daftar />} />
         <Route path="/ranting" element={<Ranting />} />
         <Route path="/bookmark" element={<Bookmark />} />
